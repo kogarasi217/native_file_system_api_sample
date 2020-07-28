@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>Native File System API Demo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Native File System API</header>
+      <main>
+        <button type="button" onclick="openFile()">Open File</button>
+        <div class="content">
+          <textarea id="txt" rows="30" onchange="onChangeTextArea()"></textarea>
+        </div>
+      </main>
+      <footer>
+        <input type="checkbox" id="auto-save" onchange="onChangeAutoSave()" />
+        <label for="auto-save">Auto Save</label>
+        <button type="button" onclick="saveFile()">Save</button>
+      </footer>
+    </div>
+  </body>
+</html>
